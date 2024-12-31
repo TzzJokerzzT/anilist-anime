@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AniList Anime Project
 
-## Getting Started
+Este proyecto es una aplicación web que permite a los usuarios explorar información sobre animes utilizando la API de AniList. Proporciona funcionalidades como búsqueda de animes, visualización de detalles y gestión de favoritos.
 
-First, run the development server:
+## Características
+
+- **Exploración de Animes Populares**: Navega por una lista de los animes más populares.
+- **Búsqueda de Animes**: Busca animes por título o categoría.
+- **Detalles del Anime**: Visualiza información detallada sobre un anime específico, incluyendo su sinopsis, estado, episodios y personajes.
+- **Gestión de Favoritos**: Agrega o elimina animes de tu lista de favoritos, con persistencia en `localStorage`.
+
+## Tecnologías Utilizadas
+
+- **Next.js**: Framework de React para aplicaciones web.
+- **TypeScript**: Superconjunto de JavaScript que añade tipado estático.
+- **Tailwind CSS**: Framework de CSS para diseño rápido y responsivo.
+- **Zustand**: Biblioteca para gestión de estado en React.
+- **AniList API**: API para obtener información sobre animes.
+
+## Requisitos Previos
+
+- Node.js (versión 14 o superior)
+- pnpm (versión 6 o superior)
+
+## Instalación
+
+1. **Clona el repositorio**:
+
+   ```bash
+   git clone https://github.com/TzzJokerzzT/anilist-anime.git
+   ```
+
+2. Instalar dependecias:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Correr proyecto:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Estructura del proyecto
 
-## Learn More
+anilist-anime/
+├── app/
+│ ├── components/ # Componentes reutilizables
+│ ├── context/ # Proveedores de contexto y stores
+│ ├── pages/ # Páginas de la aplicación
+│ ├── styles/ # Archivos de estilo
+│ └── utils/ # Utilidades y funciones auxiliares
+├── public/ # Archivos públicos (imágenes, fuentes, etc.)
+├── .gitignore # Archivos y directorios ignorados por Git
+├── package.json # Dependencias y scripts del proyecto
+├── README.md # Documentación del proyecto
+└── tsconfig.json # Configuración de TypeScript
 
-To learn more about Next.js, take a look at the following resources:
+## Librerias Usadas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[pnpm](https://pnpm.io/es/)
+[Next.Js](https://nextjs.org/)
+[Zustand](https://zustand-demo.pmnd.rs/)
+[React Keep](https://react.keepdesign.io/)
+[Anilist](https://docs.anilist.co/)
+[Typescript](https://www.typescriptlang.org/)
+[TailwindCSS](https://tailwindcss.com/)
+[GraphQL](https://graphql.org/)
+[Apollo](https://www.apollographql.com/docs/apollo-server)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Derechos de autor
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este proyecto fue diseñedo para propositos educativos y la información fue obtenida atraves de este pagina de uso libre [Anilist](https://docs.anilist.co/). Diseñado por Alexis Buelvas

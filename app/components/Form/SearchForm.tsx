@@ -3,7 +3,6 @@
 import { useSearchStore } from "@/context/AnilistProvider";
 import { SearchFormProps } from "@/types/types";
 import { Button, Input } from "keep-react";
-import { useState } from "react";
 
 export default function SearchForm({ onSearch }: SearchFormProps) {
   const { searchTerm, setSearchTerm, resetSearchTerm } = useSearchStore();

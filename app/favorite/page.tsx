@@ -3,6 +3,7 @@
 import { NavbarComponent } from "@/components/Navbar/Navbar";
 import { useAnimeStore } from "@/context/AnilistProvider";
 import { Badge } from "keep-react";
+import Image from "next/image";
 
 export default function FavoritePage() {
   const { favorites, removeFromFavorites } = useAnimeStore();
@@ -23,7 +24,7 @@ export default function FavoritePage() {
               className="bg-white border-[#2e2e2e]  p-4 rounded-lg shadow-lg"
             >
               <div className="relative mb-4">
-                <img
+                <Image
                   src={anime.coverImage.large}
                   alt={anime.title.romaji}
                   className="object-cover w-full h-40 rounded-lg"

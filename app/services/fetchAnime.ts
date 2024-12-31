@@ -37,7 +37,7 @@ export async function fetchAnimesByQuery(
   return data.Page.media;
 }
 
-export async function fetchAnimeById(id: number) {
+export async function fetchAnimeById(id: Number) {
   const { data } = await client.query({
     query: GET_ANIME_DETAILS,
     variables: { id },

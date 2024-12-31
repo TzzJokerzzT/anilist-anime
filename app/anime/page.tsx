@@ -4,6 +4,8 @@ import { useAnimeStore } from "@/context/AnilistProvider";
 import { useEffect } from "react";
 import Image from "next/image";
 import { Badge } from "keep-react";
+import { SpinnerComponent } from "@/components/Spinner/Spinner";
+import { CharacterEdge } from "@/types/anilist";
 
 export default function AnimeDetailsPage() {
   const {
@@ -23,7 +25,7 @@ export default function AnimeDetailsPage() {
   }, [animeId, fetchAnimeById]);
 
   if (loading) {
-    return <p>Loading...</p>;
+    return <SpinnerComponent />;
   }
 
   if (!animeDetails) {
@@ -103,7 +105,7 @@ export default function AnimeDetailsPage() {
           Characters
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-4">
-          {characters?.edges?.map(({ node }: any) => (
+          {characters?.edges?.map(({ node }: CharacterEdge) => (
             <div key={node.id} className="flex flex-col items-center">
               <Image
                 src={node.image?.large || "/default-avatar.png"}

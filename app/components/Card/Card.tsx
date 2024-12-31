@@ -26,7 +26,6 @@ export const CardComponent = ({
   id,
   image,
   title,
-  description,
   episodes,
   type,
   status,

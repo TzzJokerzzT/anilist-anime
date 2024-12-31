@@ -7,8 +7,8 @@ import {
 import { Anime, AnimeQueryResponse } from "@/types/anilist";
 
 export async function fetchAnimes(
-  page: Number,
-  perPage: Number,
+  page: number,
+  perPage: number,
 ): Promise<Anime[]> {
   const { data } = await client.query<AnimeQueryResponse>({
     query: GET_ANIME_QUERY,
@@ -37,7 +37,7 @@ export async function fetchAnimesByQuery(
   return data.Page.media;
 }
 
-export async function fetchAnimeById(id: Number) {
+export async function fetchAnimeById(id: number) {
   const { data } = await client.query({
     query: GET_ANIME_DETAILS,
     variables: { id },

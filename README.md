@@ -72,3 +72,5 @@ anilist-anime/
 ## Derechos de autor
 
 Este proyecto fue diseñedo para propositos educativos y la información fue obtenida atraves de este pagina de uso libre [Anilist](https://docs.anilist.co/). Diseñado por Alexis Buelvas
+
+Editor de texto utilizado para el proyecto [NeoVim](https://neovim.io/) junto con [LazyVim](https://www.lazyvim.org/)

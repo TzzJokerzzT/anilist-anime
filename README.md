@@ -59,15 +59,15 @@ anilist-anime/
 
 ## Librerias Usadas
 
-[pnpm](https://pnpm.io/es/)
-[Next.Js](https://nextjs.org/)
-[Zustand](https://zustand-demo.pmnd.rs/)
-[React Keep](https://react.keepdesign.io/)
-[Anilist](https://docs.anilist.co/)
-[Typescript](https://www.typescriptlang.org/)
-[TailwindCSS](https://tailwindcss.com/)
-[GraphQL](https://graphql.org/)
-[Apollo](https://www.apollographql.com/docs/apollo-server)
+- [pnpm](https://pnpm.io/es/)
+- [Next.Js](https://nextjs.org/)
+- [Zustand](https://zustand-demo.pmnd.rs/)
+- [React Keep](https://react.keepdesign.io/)
+- [Anilist](https://docs.anilist.co/)
+- [Typescript](https://www.typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [GraphQL](https://graphql.org/)
+- [Apollo](https://www.apollographql.com/docs/apollo-server)
 
 ## Derechos de autor
 

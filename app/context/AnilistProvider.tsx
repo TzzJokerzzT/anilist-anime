@@ -23,8 +23,14 @@ export const useAnimeStore = create<AnimeStore>((set, get) => ({
   allAnimes: [],
   currentPage: 1,
   animeDetails: null as Anime | null,
-  animeId: parseInt(localStorage.getItem("animeId") || "0", 10),
-  favorites: JSON.parse(localStorage.getItem("favorites") || "[]"),
+  animeId:
+    typeof window !== "undefined"
+      ? parseInt(localStorage.getItem("animeId") || "0", 10)
+      : 0,
+  favorites:
+    typeof window !== "undefined"
+      ? JSON.parse(localStorage.getItem("favorites") || "[]")
+      : [],
 
   addToFavorites: (anime: Anime) => {
     const favorites = get().favorites;
@@ -33,7 +39,9 @@ export const useAnimeStore = create<AnimeStore>((set, get) => ({
       const updatedFavorites = [...favorites, anime];
       set({ favorites: updatedFavorites });
 
-      localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+      if (typeof window !== "undefined") {
+        localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+      }
     }
   },
 
@@ -43,7 +51,9 @@ export const useAnimeStore = create<AnimeStore>((set, get) => ({
     const updatedFavorites = favorites.filter((anime) => anime.id !== animeId);
     set({ favorites: updatedFavorites });
 
-    localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+    if (typeof window !== "undefined") {
+      localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+    }
   },
 
   fetchPopularAnimes: async (page?: number) => {

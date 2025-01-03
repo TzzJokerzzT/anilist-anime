@@ -1,4 +1,5 @@
 "use client";
+
 import { useAnimeStore } from "@/context/AnilistProvider";
 import {
   Pagination,

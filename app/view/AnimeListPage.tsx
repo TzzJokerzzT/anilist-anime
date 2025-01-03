@@ -1,3 +1,5 @@
+"use client";
+
 import { CardComponent } from "@/components/Card/Card";
 import { AnimeListProps } from "@/types/types";
 

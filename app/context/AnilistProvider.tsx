@@ -45,6 +45,7 @@ export const useAnimeStore = create<AnimeStore>((set, get) => ({
 
     localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
   },
+
   fetchPopularAnimes: async (page?: number) => {
     set({ loading: true });
     const { perPage } = get();

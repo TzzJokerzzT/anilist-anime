@@ -42,7 +42,7 @@ export interface AnimeStore {
   currentPage: number;
   totalPages: number;
   animeId: number;
-  fetchPopularAnimes: (page: number) => Promise<void>;
+  fetchPopularAnimes: (page?: number) => Promise<void>;
   fetchAnimeById: (id: number) => Promise<void>;
   searchAnimes: (query: string, category: string) => Promise<void>;
   setCategory: (newCategory: string) => void;

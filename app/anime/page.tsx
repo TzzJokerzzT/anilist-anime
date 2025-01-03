@@ -1,3 +1,5 @@
+"use client";
+
 import Layout from "@/layout/layout";
 import AnimeDetailsPage from "@/view/AnimeDetails";
 

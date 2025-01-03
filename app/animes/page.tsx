@@ -1,3 +1,5 @@
+"use client";
+
 import Layout from "@/layout/layout";
 import HomeView from "@/view/HomeviewPage";
 
